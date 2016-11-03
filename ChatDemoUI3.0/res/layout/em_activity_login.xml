@@ -71,6 +71,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -92,6 +93,7 @@
         android:textColor="@color/blue" />
 
     <Button
+        android:id="@+id/btn_register"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
