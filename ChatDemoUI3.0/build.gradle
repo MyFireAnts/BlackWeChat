@@ -4,7 +4,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath 'com.android.tools.build:gradle:2.2.2'
     }
 }
 
@@ -23,7 +23,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.hyphenate.chatuidemo"
+        applicationId "com.Ants.blackwechat"
         minSdkVersion 11
         targetSdkVersion 22
         multiDexEnabled true
