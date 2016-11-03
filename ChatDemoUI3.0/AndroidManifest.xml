@@ -51,7 +51,7 @@
     <application
         android:name="com.Ants.blackwechat.DemoApplication"
         android:allowBackup="true"
-        android:icon="@drawable/em_logo_uidemo"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name">
         <activity
             android:name="com.Ants.blackwechat.ui.MainActivity"
