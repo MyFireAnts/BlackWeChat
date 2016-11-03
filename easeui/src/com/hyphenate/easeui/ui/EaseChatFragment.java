@@ -566,7 +566,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
             }
 
             // if the message is for current conversation
-            if (username.equals(toChatUsername) || message.getTo().equals(toChatUsername)) {
+            if (username.equals(toChatUsername)) {
                 messageList.refreshSelectLast();
                 EaseUI.getInstance().getNotifier().vibrateAndPlayTone(message);
             } else {
@@ -864,7 +864,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
             intent.setType("image/*");
 
         } else {
-            intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         }
         startActivityForResult(intent, REQUEST_CODE_LOCAL);
     }
@@ -956,7 +956,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
             break;
         }
         
-        if(forward_msg.getChatType() == EMMessage.ChatType.ChatRoom){
+        if(forward_msg.getChatType() == ChatType.ChatRoom){
             EMClient.getInstance().chatroomManager().leaveChatRoom(forward_msg.getTo());
         }
     }

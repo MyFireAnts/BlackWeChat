@@ -1,5 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/layout_title" layout="@layout/view_layout_title"/>
+    <com.Ants.blackwechat.widget.MFViewPager
+        android:id="@+id/layout_viewpage"
+        android:layout_below="@id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="48dp">
+    </com.Ants.blackwechat.widget.MFViewPager>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D6DCDC"/>
+        <com.Ants.blackwechat.widget.DMTabHost
+            android:id="@+id/layout_tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:paddingBottom="1dp">
+            <com.Ants.blackwechat.widget.DMTabButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:drawableTop="@drawable/tab_weixin"
+                app:tabtext="@string/app_name">
+            </com.Ants.blackwechat.widget.DMTabButton>
+            <com.Ants.blackwechat.widget.DMTabButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:drawableTop="@drawable/tab_contact_list"
+                app:tabtext="@string/contacts">
+            </com.Ants.blackwechat.widget.DMTabButton>
+            <com.Ants.blackwechat.widget.DMTabButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:drawableTop="@drawable/tab_find"
+                app:tabtext="@string/discover">
+            </com.Ants.blackwechat.widget.DMTabButton>
+            <com.Ants.blackwechat.widget.DMTabButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:drawableTop="@drawable/tab_profile"
+                app:tabtext="@string/me">
+            </com.Ants.blackwechat.widget.DMTabButton>
+        </com.Ants.blackwechat.widget.DMTabHost>
+    </LinearLayout>
+</RelativeLayout>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
@@ -108,4 +171,4 @@
         android:layout_height="match_parent"
         android:layout_above="@id/main_bottom" />
 
-</RelativeLayout>
+</RelativeLayout>-->

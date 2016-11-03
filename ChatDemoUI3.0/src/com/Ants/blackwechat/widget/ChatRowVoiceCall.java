@@ -4,9 +4,9 @@ import android.content.Context;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.Ants.blackwechat.Constant;
 import com.hyphenate.chat.EMMessage;
 import com.hyphenate.chat.EMTextMessageBody;
+import com.Ants.blackwechat.Constant;
 import com.hyphenate.easeui.R;
 import com.hyphenate.easeui.widget.chatrow.EaseChatRow;
 
