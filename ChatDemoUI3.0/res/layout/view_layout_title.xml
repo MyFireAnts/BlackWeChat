@@ -1,40 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/public_title"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:background="@color/colorPrimary">
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
 
-    <!--标题头最左边显示微信文本-->
     <TextView
         android:id="@+id/txt_left"
         style="@style/txt_titleStyle1"
+        android:textSize="17sp"
+        android:visibility="gone"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
-        android:text="@string/app_name"
-        android:textSize="17sp"
-        android:visibility="gone" />
+        android:text="@string/app_name"/>
 
-    <!--标题头最左边显示back图标按钮-->
     <ImageView
         android:id="@+id/img_back"
         android:layout_width="40dp"
         android:layout_height="18dp"
+        android:visibility="gone"
         android:layout_centerVertical="true"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/icon_back"
-        android:visibility="gone" />
+        android:src="@drawable/icon_back" />
 
-    <!--标题头最中间显示当前页面名称文本-->
     <TextView
         android:id="@+id/txt_title"
         style="@style/txt_titleStyle1"
-        android:layout_centerInParent="true"
         android:text="@string/app_name"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:layout_centerInParent="true"  />
 
-    <!--标题头左右边显示添加图标按钮-->
     <ImageView
         android:id="@+id/img_right"
         android:layout_width="40dp"
@@ -42,27 +37,25 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="5dp"
+        android:visibility="gone"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/icon_add"
-        android:visibility="gone" />
+        android:src="@drawable/icon_add" />
 
-    <!--标题头最右边显示添加朋友文本-->
     <TextView
         android:id="@+id/txt_right"
         style="@style/txt_titleStyle1"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:text="@string/menu_addfriend"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="10dp"
-        android:text="@string/menu_addfriend"
-        android:textSize="16sp"
-        android:visibility="gone" />
+        android:layout_marginRight="10dp"  />
 
-    <!--标题头最右边显示发送按钮-->
     <Button
         android:id="@+id/btn_send"
         style="@style/btn_titleStyle"
+        android:visibility="gone"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:text="@string/addcontact_send_msg"
-        android:visibility="gone" />
+        android:text="@string/addcontact_send_msg"/>
 </RelativeLayout>
